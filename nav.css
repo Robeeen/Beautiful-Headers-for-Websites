@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.top-nav{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10%;
+    background: rgb(97, 248, 248);
+    font-size: 12px;
+    color: #24252a;
+}
+.top-nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 10px;
+    color: black;
+    
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-image: linear-gradient(#24252a, black);
+    opacity: 86%;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+nav ul {
+    background-image: linear-gradient(#24252a, black);
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 29px 27px;
+    color: white;   
+    text-decoration: none;
+    float: left;
+    transition-duration: 0.5s;
+}
+nav li:hover{
+    background: rgb(97, 248, 248);
+    cursor: pointer;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+nav li a:hover{
+    color: #000;
+    transition: all 0.4s ease 0s;
+    position: s;
+}
+button{
+    padding: 5px 10px;
+    background-image: linear-gradient(#41fff7, #b091f5);
+    border-radius: 5px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+}
+button:hover{
+    background-image: linear-gradient(#41fff7, #fff);
+}
+.burger-menu{
+    display: none;
+}
+nav ul li ul {
+    background-image: linear-gradient(#24252a, black);
+    visibility: hidden;
+    opacity: 0;
+    width: 12rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 29px;
+    /* left: 0; */
+    display: none;
+}
+nav li ul li ul{
+    background-image: linear-gradient(#24252a, black);
+        visibility: hidden;
+        opacity: 0;
+        width: 12rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 0px;
+        margin-left: 83%;
+        display: none;
+}
+nav ul li:hover>ul,
+nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    z-index: 99999;
+}
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+}
+.burger-menu nav li{
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .top-nav {
+        padding: 0px 5%;
+    }
+    header{
+        padding: 0px 5%;
+    }    
+    .burger-menu{
+        display: block;
+        color: white;
+    }    
+    .get-started{
+        display: none;
+    }
+    nav ul{
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 115px;            
+    }
+    nav li{
+        display: block;
+        float: none;
+    }
+    .dropdown{
+        background-image: linear-gradient(#24252a, black);
+        left: 10%;
+        margin-top: 44px;
+        width: 10rem;
+    } 
+    nav li ul li ul{
+        width: 5rem;
+    }
+    nav ul li ul .dropdown{
+        background-image: linear-gradient(#24252a, black);
+        margin-top: 0px;
+        
+    }
+    #responsive{
+            display: none;
+            
+    }
+    
+}
